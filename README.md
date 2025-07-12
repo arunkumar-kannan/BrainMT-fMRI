@@ -34,13 +34,13 @@ Johns Hopkins University
 
 ## ✅ To‑Do List for Code Release
 
-- [ ] Create repository     
+- [x] ~~Create repository~~     
 - [ ] **Installation guide** – provide `requirements.txt` / `environment.yml` and setup instructions  
 - [ ] **Training scripts** – release reproducible training pipeline (`train.py`, configs, SLURM examples)  
-- [ ] **Evaluation scripts** – include scripts/notebooks for validation and test‑set evaluation  
+- [ ] **Evaluation scripts** – include scripts for validation and test‑set evaluation  
 - [ ] **Benchmark tables** – add performance tables & plots in `docs/`  
-- [ ] **Inference demo** – provide an interactive notebook or CLI demo for single‑subject inference  
-- [ ] **Dataset prep** – share preprocessing scripts 
+- [ ] **Inference demo** – provide an interactive notebook for single‑subject inference  
+- [ ] **Dataset prep** – share preprocessing scripts
 - [ ] **Config files** – upload YAML config templates for different tasks
 
 ---
