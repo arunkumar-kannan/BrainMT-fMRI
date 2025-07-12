@@ -10,4 +10,20 @@ Johns Hopkins University
 
 </div>
 
+---
 
+## ✨ Overview / Highlights
+
+- 🔍 **Motivation:** *TBD – concise statement of the research gap BrainMT addresses.*
+- 🧠 **Architecture:** *TBD – one‑sentence summary of the hybrid Mamba‑Transformer design.*
+- 📈 **Results:** *TBD – key performance gains on fMRI benchmarks.*
+
+<div align="center">
+  <img src="assets/teaser_brainmt.png" width="70%" alt="BrainMT Teaser Figure"/>
+</div>
+
+### 📜 Abstract
+
+*Replace this placeholder with the final abstract from your MICCAI 2025 paper. Use italics or blockquotes to keep the text visually distinct and easy to skim.*
+
+---
