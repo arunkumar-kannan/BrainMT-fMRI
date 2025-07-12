@@ -12,11 +12,11 @@ Johns Hopkins University
 
 ---
 
-## ✨ Overview / Highlights
+## ✨ Highlights
 
-- 🔍 **Motivation:** *TBD – concise statement of the research gap BrainMT addresses.*
-- 🧠 **Architecture:** *TBD – one‑sentence summary of the hybrid Mamba‑Transformer design.*
-- 📈 **Results:** *TBD – key performance gains on fMRI benchmarks.*
+- 🔍 **Motivation:** *Can we develop deep learning models that efficiently operate on voxel-level fMRI data - just like we do with other medical imaging modalities?*
+- 🧠 **Architecture:** *BrainMT framework operates in two stages: (1) a bidirectional Mamba block with a temporal-first scanning mechanism to capture global temporal interactions in a computationally efficient manner; and (2) a transformer block leveraging self-attention to model global spatial relationships across the deep features processed by the Mamba block.*
+- 📈 **Results:** *Through extensive experiments and ablation studies on two large-scale public datasets - UKBioBank (UKB) and the Human Connectome Project (HCP), we demonstrate that BrainMT outperforms existing methods and generalizes robustly across diverse tasks for improved phenotypic prediction in neuroimaging.*
 
 <div align="center">
   <img src="assets/teaser_brainmt.png" width="70%" alt="BrainMT Teaser Figure"/>
