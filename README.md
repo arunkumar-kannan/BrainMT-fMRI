@@ -10,6 +10,8 @@ Johns Hopkins University
 
 </div>
 
+---
+
 ## ✨ Highlights
 
 🔍 **Motivation:** Can we develop deep learning models that efficiently operate on voxel-level fMRI data - just like we do with other medical imaging modalities?
@@ -27,4 +29,19 @@ Johns Hopkins University
 ### 📜 Abstract
 
 *Recent advances in deep learning have made it possible to predict phenotypic measures directly from functional magnetic resonance imaging (fMRI) brain volumes, sparking significant interest in the neuroimaging community. However, existing approaches, primarily based on convolutional neural networks or transformer architectures, often struggle to model the complex relationships inherent in fMRI data, limited by their inability to capture long-range spatial and temporal dependencies. To overcome these shortcomings, we introduce BrainMT, a novel hybrid framework designed to efficiently learn and integrate long-range spatiotemporal attributes in fMRI data. Our framework operates in two stages: (1) a bidirectional Mamba block with a temporal-first scanning mechanism to capture global temporal interactions in a computationally efficient manner; and (2) a transformer block leveraging self-attention to model global spatial relationships across the deep features processed by the Mamba block. Extensive experiments on two large-scale public datasets, UKBioBank and the Human Connectome Project, demonstrate that BrainMT achieves state-of-the-art performance on both classification (sex prediction) and regression (cognitive intelligence prediction) tasks, outperforming existing methods by a significant margin.*
+
+---
+
+## ✅ To‑Do List for Code Release
+
+- [ ] Create repository     
+- [ ] **Installation guide** – provide `requirements.txt` / `environment.yml` and setup instructions  
+- [ ] **Training scripts** – release reproducible training pipeline (`train.py`, configs, SLURM examples)  
+- [ ] **Evaluation scripts** – include scripts/notebooks for validation and test‑set evaluation  
+- [ ] **Benchmark tables** – add performance tables & plots in `docs/`  
+- [ ] **Inference demo** – provide an interactive notebook or CLI demo for single‑subject inference  
+- [ ] **Dataset prep** – share preprocessing scripts 
+- [ ] **Config files** – upload YAML config templates for different tasks
+
+---
 
