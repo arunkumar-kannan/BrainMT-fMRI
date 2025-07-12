@@ -23,7 +23,7 @@ Johns Hopkins University
 📈 **Results:** Through extensive experiments and ablation studies on two large-scale public datasets - UKBioBank (UKB) and the Human Connectome Project (HCP), we demonstrate that BrainMT outperforms existing methods and generalizes robustly across diverse tasks for improved phenotypic prediction in neuroimaging.
 
 <div align="center">
-  <img src="assets/teaser_brainmt.png" width="70%" alt="BrainMT Teaser Figure"/>
+  <img src="assets/teaser.png" width="70%" alt="BrainMT Teaser Figure"/>
 </div>
 
 ### 📜 Abstract
