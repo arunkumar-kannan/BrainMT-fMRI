@@ -15,6 +15,12 @@ Johns Hopkins University
 
 🎉 **BrainMT has been accepted to [MICCAI'25](https://conferences.miccai.org/2025/en/)** 🎉
 
+This is an official PyTorch implementation for [BrainMT: A Hybrid Mamba‑Transformer Architecture for Modeling Long‑Range Dependencies in Functional MRI Data](https://papers.miccai.org/miccai-2025/paper/1341_paper.pdf).
+
+Contact: [akannan7@jhu.edu](akannan7@jhu.edu) (Arunkumar Kannan)
+
+Share us a ⭐️ if you find our repository helpful!
+
 
 ## ✨ Highlights
 
