@@ -55,7 +55,7 @@ pip install -r requirements.txt
 
 ### 2. Data Preparation
 
-Our workflow begins with data that has already been processed through the standardized fMRI preprocessing pipelines of the UK BioBank (UKB) and Human Connectome Project (HCP). The data preparation steps are two-fold here: converting the fMRI volumes into a model-friendly format and preparing the corresponding phenotype targets for our downstream tasks.
+Our workflow begins with data that has already been processed through the standardized fMRI preprocessing pipelines of the [UK BioBank (UKB)](https://www.ukbiobank.ac.uk) and [Human Connectome Project (HCP)](https://www.humanconnectome.org/study/hcp-young-adult/document/extensively-processed-fmri-data-documentation). The data preparation steps are two-fold here: converting the fMRI volumes into a model-friendly format and preparing the corresponding phenotype targets for our downstream tasks.
 
 #### 🧠 Preprocessing fMRI Volumes
 The primary goal here is to convert the NIfTI files into a more efficient format for our model. The preprocessing script, located in `src/brainmt/preprocessing/`, handles the following:
