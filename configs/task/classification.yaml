@@ -1,1 +1,4 @@
+# @package _group_
 
+name: "classification"
+loss_fn: "bce_with_logits"
