@@ -38,19 +38,39 @@ This section will guide you through setting up the environment, preprocessing da
 
 ### 1. Setting the Environment
 
-### 2. fMRI Data Preprocessing
-The code for this step is located in the `src/brainmt/preprocessing/` directory.
+### 2. Data Preparation
 
-This script preprocesses raw fMRI NIfTI files. The pipeline applies normalization (**z-score** or **min-max**), masks background voxels, and converts the 4D volumes into PyTorch tensors in `fp16` format. This conversion ensures efficient storage and accelerates data loading during training. The script also supports parallel processing to handle large datasets quickly.
+Our workflow begins with data that has already been processed through the standardized fMRI preprocessing pipelines of the UK BioBank (UKB) and Human Connectome Project (HCP). The preparation steps in this repository focus on two key areas: converting the fMRI volumes into a model-friendly format and preparing the corresponding phenotype targets for our downstream tasks.
 
-#### Usage
-1.  **Configure paths and parameters** in the `main()` function of `preprocessing/preprocess_fmri.py`.
-    * `load_root`: Set this to the input directory containing your raw fMRI NIfTI files.
-    * `save_root`: Set this to the output directory where processed PyTorch tensors will be stored.
+#### 🧠 Preprocessing fMRI Volumes
+The primary goal here is to convert the NIfTI files into a more efficient format for deep learning. This script, located in `src/brainmt/preprocessing/`, handles the following:
+* **Normalization**: Applies voxel-wise normalization across the time dimension (either **z-score** or **min-max**).
+* **Masking**: Removes background voxels to reduce computational overhead.
+* **Conversion**: Transforms the 4D fMRI volumes into PyTorch tensors and saves them in `fp16` format to significantly reduce storage space and accelerate data loading during training.
+
+##### Usage
+1.  **Configure paths and parameters** in `src/brainmt/preprocessing/preprocess_fmri.py`.
+    * `load_root`: Set this to the directory containing your preprocessed fMRI NIfTI files.
+    * `save_root`: Set this to the output directory where the processed PyTorch tensors will be stored.
 2.  **Run the script** from your terminal:
     ```bash
-    python preprocessing/preprocess_fmri.py
+    python src/brainmt/preprocessing/preprocess_fmri.py
     ```
+
+#### 🎯 Preparing Target Phenotypes
+We also prepare the target data for our two downstream tasks: regression and classification.
+
+* **Regression (Cognitive Intelligence):**
+    * For the **UKB** dataset, we use fluid intelligence scores from data-field `20016`.
+    * For the **HCP** dataset, we use the age-adjusted cognitive composite score from `CogTotalComp_AgeAdj`.
+    * To stabilize model training, we **z-normalize** these scores for each dataset independently.
+
+* **Classification (Sex):**
+    * For the **UKB** dataset, we use the genetic sex field `31`.
+    * For the **HCP** dataset, we use the corresponding gender field.
+    * We encode the labels numerically: `'male'` is mapped to `1` and `'female'` is mapped to `0`.
+
+The final output for each task is a **pickle file** that contains a dictionary mapping each subject's ID to their corresponding target value. This file is used directly by the data loader during model training.
 ---
 
 
