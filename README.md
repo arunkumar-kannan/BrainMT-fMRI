@@ -35,7 +35,21 @@ Johns Hopkins University
 
 This section will guide you through setting up the environment, preprocessing data, and running the BrainMT model.
 
-### 1. Setting the Environment
+### 1. Environment Setup
+
+#### Step 1: Create and activate virtual environment
+```bash
+# Create virtual environment
+python -m venv brainmt_env
+
+# Activate virtual environment
+source brainmt_env/bin/activate
+```
+#### Step 2: Install dependencies
+```bash
+# Install from requirements.txt
+pip install -r requirements.txt
+```
 
 ### 2. Data Preparation
 
