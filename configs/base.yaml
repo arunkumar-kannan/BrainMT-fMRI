@@ -1,1 +1,59 @@
+# @package _global_
 
+defaults:
+  - model: brain_mt
+  - dataset: fmri
+  - task: regression
+  - override hydra/job_logging: default
+  - override hydra/hydra_logging: default
+
+# --- Main Training Parameters ---
+run:
+  seed: 0
+  epochs: 70
+  batch_size: 1
+  num_workers: 4
+  device: "cuda"
+
+# --- Training Configuration ---
+training:
+  use_amp: true  # Enable mixed precision training
+
+# --- Optimizer Parameters ---
+optimizer:
+  name: "adamw"
+  lr: 2.0e-4
+  weight_decay: 0.05
+  layer_decay: 0.75
+
+# --- Scheduler Parameters ---
+scheduler:
+  name: "cosine_warmup"
+  warmup_epochs: 5 
+  first_cycle_epochs: 35 # 50% of total epochs
+  cycle_mult: 1.0
+  min_lr: 1.0e-6
+  gamma: 1.0
+
+# --- Logging and Checkpoints ---
+logging:
+  use_wandb: true  # Enable wandb logging
+  project_name: "brain_mt"
+  log_interval: 10
+  
+checkpoint:
+  dir: "/brain_mt/checkpoints/"
+  save_best_only: True
+
+# --- Inference Parameters ---
+inference:
+  checkpoint_path: null  # Will auto-detect if null
+
+# --- DDP Parameters ---
+distributed:
+  backend: "nccl"
+
+# --- Hydra Settings ---
+hydra:
+  run:
+    dir: outputs/${now:%Y-%m-%d_%H-%M-%S}
