@@ -43,7 +43,7 @@ This section will guide you through setting up the environment, preprocessing da
 Our workflow begins with data that has already been processed through the standardized fMRI preprocessing pipelines of the UK BioBank (UKB) and Human Connectome Project (HCP). The data preparation steps are two-fold here: converting the fMRI volumes into a model-friendly format and preparing the corresponding phenotype targets for our downstream tasks.
 
 #### 🧠 Preprocessing fMRI Volumes
-The primary goal here is to convert the NIfTI files into a more efficient format for deep learning. This script, located in `src/brainmt/preprocessing/`, handles the following:
+The primary goal here is to convert the NIfTI files into a more efficient format for our model. This script, located in `src/brainmt/preprocessing/`, handles the following:
 * **Normalization**: Applies voxel-wise normalization across the time dimension (either **z-score** or **min-max**).
 * **Masking**: Removes background voxels to reduce computational overhead.
 * **Conversion**: Transforms the 4D fMRI volumes into PyTorch tensors and saves them in `fp16` format to significantly reduce storage space and accelerate data loading during training.
