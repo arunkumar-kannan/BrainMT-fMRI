@@ -145,10 +145,10 @@ python inference.py task=regression inference.checkpoint_path=/path/to/your/best
 
 If you find this repository useful, please consider citing:
 ```bash
-@InProceedings{KanAru_BrainMT_MICCAI2025,
-        author = { Kannan, Arunkumar and Lindquist, Martin A. and Caffo, Brian},
-        title = { { BrainMT: A Hybrid Mamba-Transformer Architecture for Modeling Long-Range Dependencies in Functional MRI Data } },
-        booktitle = {proceedings of Medical Image Computing and Computer Assisted Intervention -- MICCAI 2025},
+@inproceedings{KanAru_BrainMT_MICCAI2025,
+        author = {Kannan, Arunkumar and Lindquist, Martin A. and Caffo, Brian},
+        title = {BrainMT: A Hybrid Mamba-Transformer Architecture for Modeling Long-Range Dependencies in Functional MRI Data},
+        booktitle = {International Conference on Medical Image Computing and Computer-Assisted Intervention},
         year = {2025},
         publisher = {Springer Nature Switzerland},
         volume = {LNCS 15971},
