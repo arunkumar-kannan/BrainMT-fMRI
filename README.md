@@ -49,7 +49,7 @@ The primary goal here is to convert the NIfTI files into a more efficient format
 * **Conversion**: Transforms the 4D fMRI volumes into PyTorch tensors and saves them in `fp16` format to significantly reduce storage space and accelerate data loading during training.
 
 ##### Usage
-1.  **Configure paths and parameters** in `src/brainmt/preprocessing/preprocess_fmri.py`.
+1.  **Configure paths and parameters** in `preprocessing/preprocess_fmri.py`.
     * `load_root`: Set this to the directory containing your preprocessed fMRI NIfTI files.
     * `save_root`: Set this to the output directory where the processed PyTorch tensors will be stored.
 2.  **Run the script** from your terminal:
@@ -71,6 +71,19 @@ We also prepare the target data for our two downstream tasks: regression and cla
     * We encode the labels numerically: `'male'` is mapped to `1` and `'female'` is mapped to `0`.
 
   The final output for each task is a **pickle file** that contains a dictionary mapping each subject's ID to their corresponding target value. This file is used directly by the data loader during model training.
+
+#### 🚀 Running the Model
+
+We use [Hydra](https://hydra.cc/) to manage configurations, making it easy to customize runs from the command line. The main configuration files are located in the `configs/` directory.
+
+### 📋 Configuration Files
+
+* `configs/base.yaml`: The main configuration file. It sets default parameters for the model, dataset, training schedule, optimizer, and logging.
+* `configs/model/brain_mt.yaml`: Defines the **BrainMT model architecture**, including embedding dimensions, number of layers, and patch size.
+* `configs/dataset/fmri.yaml`: Specifies the **dataset paths** and properties, like the location of the fMRI image data and the target phenotype file.
+* `configs/task/regression.yaml`: Sets the task to **regression** and defines the loss function (`mse`).
+* `configs/task/classification.yaml`: Sets the task to **classification** and defines the loss function (`bce_with_logits`).
+
 ---
 
 
