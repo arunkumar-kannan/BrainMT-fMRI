@@ -1,1 +1,23 @@
+# @package model
 
+name: "BrainMT"
+
+# --- Architecture Hyperparameters ---
+img_size: [91, 109, 91]
+patch_size: 4
+in_chans: 1
+num_classes: 1
+embed_dim: 512
+depth: [12, 8] # Mamba layers followed by Attention layers
+rms_norm: True
+residual_in_fp32: True
+fused_add_norm: True
+num_heads: 2
+qkv_bias: True
+num_frames: 200 # Corresponds to data slicing
+
+# --- Dropout Rates ---
+drop_rate: 0.0
+drop_path_rate: 0.1
+attn_drop_rate: 0.0
+fc_drop_rate: 0.0
