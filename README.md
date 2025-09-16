@@ -84,6 +84,25 @@ We use [Hydra](https://hydra.cc/) to manage configurations, making it easy to cu
 * `configs/task/regression.yaml`: Sets the task to **regression** and defines the loss function (`mse`).
 * `configs/task/classification.yaml`: Sets the task to **classification** and defines the loss function (`bce_with_logits`).
 
+#### Training
+
+The `train.py` script handles the model training process using Distributed Data Parallel (DDP) for efficient multi-GPU training.
+
+**1. Configure Your Training Run:**
+Open `configs/dataset/fmri.yaml` and update the `img_path` and `target_path` to point to your preprocessed fMRI data and phenotype files.
+
+**2. Start Training:**
+To start a training run, you can use the `torchrun` command. The configuration for the run is controlled by modifying parameters directly on the command line.
+
+**Example: Training for Regression**
+This command trains the model on the regression task specified in `task/regression.yaml` using 2 GPUs.
+
+```bash
+torchrun --nproc_per_node=2 train.py task=regression
+```
+
+Checkpoints for the best performing model on the validation set will be saved in the directory specified by `checkpoint.dir` in `configs/base.yaml`.
+
 ---
 
 
