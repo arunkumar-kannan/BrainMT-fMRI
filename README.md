@@ -8,7 +8,7 @@ Johns Hopkins University
 
 [![arXiv](https://img.shields.io/badge/Paper-arXiv-b31b1b.svg?logo=arXiv)](https://arxiv.org/abs/2506.22591)
 [![GitHub stars](https://img.shields.io/github/stars/arunkumar-kannan/brainmt-fmri?style=flat)](https://github.com/arunkumar-kannan/brainmt-fmri/stargazers)
-[![Visitors](https://api.visitorbadge.io/api/visitors?path=arunkumar-kannan%2Fbrainmt-fmri&label=Visitors&countColor=%23263759&style=flat)](https://visitorbadge.io/status?path=arunkumar-kannan%2Fbrainmt-fmri)
+[![Visitors](https://api.visitorbadge.io/api/visitors?path=arunkumar-kannan%2Fbrainmt-fmri&label=Visitors&style=flat)](https://visitorbadge.io/status?path=arunkumar-kannan%2Fbrainmt-fmri)
 [![License](https://img.shields.io/badge/License-MIT-blue.svg)](https://opensource.org/licenses/MIT)
 
 </div>
