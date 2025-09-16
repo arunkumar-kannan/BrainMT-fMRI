@@ -110,8 +110,6 @@ Open `configs/dataset/fmri.yaml` and update the `img_path` and `target_path` to 
 To start a training run, you can use the `torchrun` command. The configuration for the run is controlled by modifying parameters directly on the command line.
 
 **Example: Training for Regression**
-This command trains the model on the regression task specified in `task/regression.yaml` using 2 GPUs.
-
 ```bash
 torchrun --nproc_per_node=2 train.py task=regression
 ```
