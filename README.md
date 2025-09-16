@@ -91,7 +91,7 @@ We also prepare the target data for our two downstream tasks: regression and cla
 
 We use [Hydra](https://hydra.cc/) to manage configurations, making it easy to customize runs from the command line. The configuration files are located in the `configs/` directory.
 
-#### 📋 Configuration Files
+#### Configuration Files
 
 * `configs/base.yaml`: The main configuration file. It sets default parameters for the model, dataset, training schedule, optimizer, and logging.
 * `configs/model/brain_mt.yaml`: Defines the **BrainMT model architecture**, including embedding dimensions, number of layers, and patch size.
@@ -122,7 +122,7 @@ Checkpoints for the best performing model on the validation set will be saved in
 
 Execute `inference.py` script specifying the task and the path to the trained model checkpoint.
 
-**Example: Running Inference on a Regression Model**
+**Example: Inference for Regression**
 ```bash
 python inference.py task=regression inference.checkpoint_path=/path/to/your/best_model.pth
 ```
@@ -131,7 +131,7 @@ python inference.py task=regression inference.checkpoint_path=/path/to/your/best
 ## ✅ To‑Do List for Code Release
 
 - [x] ~~Create repository~~     
-- [ ] **Installation guide** – provide `requirements.txt` / `environment.yml` and setup instructions  
+- [x] ~~Installation guide** – provide `requirements.txt` / `environment.yml` and setup instructions~~  
 - [x] ~~Training scripts** – release reproducible training pipeline (`train.py`, configs)~~
 - [x] ~~Evaluation scripts** – include scripts for validation and test‑set evaluation~~
 - [x] ~~Dataset prep** – share preprocessing scripts~~
