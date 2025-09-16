@@ -126,9 +126,8 @@ python inference.py task=regression inference.checkpoint_path=/path/to/your/best
 - [x] ~~Create repository~~     
 - [ ] **Installation guide** – provide `requirements.txt` / `environment.yml` and setup instructions  
 - [x] **Training scripts** – release reproducible training pipeline (`train.py`, configs)  
-- [x] **Evaluation scripts** – include scripts for validation and test‑set evaluation  
-- [ ] **Benchmark tables** – add performance tables & plots in `docs/`  
-- [ ] **Dataset prep** – share preprocessing scripts
+- [x] **Evaluation scripts** – include scripts for validation and test‑set evaluation
+- [x] **Dataset prep** – share preprocessing scripts
 - [x] **Config files** – upload YAML config templates for different tasks
 
 ## Citation
