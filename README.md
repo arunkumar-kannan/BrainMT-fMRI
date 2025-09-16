@@ -13,7 +13,7 @@ Johns Hopkins University
 
 </div>
 
-BrainMT has been accepted to [MICCAI'25](https://conferences.miccai.org/2025/en/)
+🎉 **BrainMT has been accepted to [MICCAI'25](https://conferences.miccai.org/2025/en/)** 🎉
 
 
 ## ✨ Highlights
