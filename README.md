@@ -37,6 +37,8 @@ This section will guide you through setting up the environment, preprocessing da
 
 ### 1. Environment Setup
 
+This code is implemented using Python 3.9.18, PyTorch 2.6.0 and CUDA 12.4. 
+
 #### Step 1: Create and activate virtual environment
 ```bash
 # Create virtual environment
