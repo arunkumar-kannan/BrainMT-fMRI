@@ -103,6 +103,18 @@ torchrun --nproc_per_node=2 train.py task=regression
 
 Checkpoints for the best performing model on the validation set will be saved in the directory specified by `checkpoint.dir` in `configs/base.yaml`.
 
+#### Inference
+
+The `inference.py` script evaluates a trained model on the test set, generating performance metrics and plots.
+
+**1. Run Inference:**
+Execute the script from the command line, specifying the task and the path to your trained model checkpoint.
+
+**Example: Running Inference on a Regression Model**
+```bash
+python inference.py task=regression inference.checkpoint_path=/path/to/your/best_model.pth
+```
+
 ---
 
 
