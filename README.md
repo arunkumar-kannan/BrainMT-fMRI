@@ -49,11 +49,6 @@ This script preprocesses raw fMRI NIfTI files. The pipeline applies normalizatio
     ```bash
     python preprocessing/preprocess_fmri.py
     ```
-    
-#### Citations
-
-This preprocessing pipeline is adapted from: [SwiFT](https://github.com/Transconnectome/SwiFT) and [TFF](https://github.com/GonyRosenman/TFF).
-
 ---
 
 
