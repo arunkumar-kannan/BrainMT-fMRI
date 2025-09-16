@@ -1,1 +1,14 @@
+# @package dataset
 
+name: "fMRIDataset"
+ds_name: "ukb"
+img_path: "/UKBiobank_MNI_to_torch/img"
+target_path: "/data/fluid_intelligence_ukb.pkl"
+
+# Specify the target column name from the pickle/csv file
+# Examples: 'age', 'gender', 'fluid z norm'
+target_col: "fluid z norm" 
+id_col: "eid" # Column name for subject ID
+
+# --- Preprocessing ---
+num_frames_slice: 200
