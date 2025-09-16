@@ -122,11 +122,25 @@ python inference.py task=regression inference.checkpoint_path=/path/to/your/best
 
 - [x] ~~Create repository~~     
 - [ ] **Installation guide** – provide `requirements.txt` / `environment.yml` and setup instructions  
-- [ ] **Training scripts** – release reproducible training pipeline (`train.py`, configs, SLURM examples)  
-- [ ] **Evaluation scripts** – include scripts for validation and test‑set evaluation  
+- [x] **Training scripts** – release reproducible training pipeline (`train.py`, configs)  
+- [x] **Evaluation scripts** – include scripts for validation and test‑set evaluation  
 - [ ] **Benchmark tables** – add performance tables & plots in `docs/`  
-- [ ] **Inference demo** – provide an interactive notebook for single‑subject inference  
 - [ ] **Dataset prep** – share preprocessing scripts
-- [ ] **Config files** – upload YAML config templates for different tasks
+- [x] **Config files** – upload YAML config templates for different tasks
 
+## Citation
+
+If you use this code in your research, please consider citing:
+```bash
+@InProceedings{KanAru_BrainMT_MICCAI2025,
+        author = { Kannan, Arunkumar and Lindquist, Martin A. and Caffo, Brian},
+        title = { { BrainMT: A Hybrid Mamba-Transformer Architecture for Modeling Long-Range Dependencies in Functional MRI Data } },
+        booktitle = {proceedings of Medical Image Computing and Computer Assisted Intervention -- MICCAI 2025},
+        year = {2025},
+        publisher = {Springer Nature Switzerland},
+        volume = {LNCS 15971},
+        month = {September},
+        page = {151 -- 161}
+}
+```
 
