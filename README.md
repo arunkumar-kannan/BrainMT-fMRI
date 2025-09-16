@@ -69,7 +69,6 @@ We also prepare the target data for our two downstream tasks: regression and cla
     * For the **UKB** dataset, we use the sex field `31`.
     * For the **HCP** dataset, we use the corresponding gender field.
     * We encode the labels numerically: `'male'` is mapped to `1` and `'female'` is mapped to `0`.
-
 The final output for each task is a **pickle file** that contains a dictionary mapping each subject's ID to their corresponding target value. This file is used directly by the data loader during model training.
 ---
 
