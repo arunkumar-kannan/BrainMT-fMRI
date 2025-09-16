@@ -74,7 +74,7 @@ We also prepare the target data for our two downstream tasks: regression and cla
 
 ### 3. Running the Model
 
-We use [Hydra](https://hydra.cc/) to manage configurations, making it easy to customize runs from the command line. The main configuration files are located in the `configs/` directory.
+We use [Hydra](https://hydra.cc/) to manage configurations, making it easy to customize runs from the command line. The configuration files are located in the `configs/` directory.
 
 #### 📋 Configuration Files
 
