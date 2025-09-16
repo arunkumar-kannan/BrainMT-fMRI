@@ -66,7 +66,7 @@ We also prepare the target data for our two downstream tasks: regression and cla
     * To stabilize model training, we **z-normalize** these scores for each dataset independently.
 
 * **Classification (Sex):**
-    * For the **UKB** dataset, we use the genetic sex field `31`.
+    * For the **UKB** dataset, we use the sex field `31`.
     * For the **HCP** dataset, we use the corresponding gender field.
     * We encode the labels numerically: `'male'` is mapped to `1` and `'female'` is mapped to `0`.
 
