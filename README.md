@@ -104,10 +104,8 @@ Checkpoints for the best performing model on the validation set will be saved in
 
 #### Inference
 
-The `inference.py` script evaluates a trained model on the test set, generating performance metrics and plots.
-
 **1. Run Inference:**
-Execute the script from the command line, specifying the task and the path to your trained model checkpoint.
+Execute `inference.py` script from the command line, specifying the task and the path to the trained model checkpoint.
 
 **Example: Running Inference on a Regression Model**
 ```bash
