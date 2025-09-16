@@ -139,7 +139,7 @@ python inference.py task=regression inference.checkpoint_path=/path/to/your/best
 
 ## Citation
 
-If you use this code in your research, please consider citing:
+If you find this repository useful, please consider citing:
 ```bash
 @InProceedings{KanAru_BrainMT_MICCAI2025,
         author = { Kannan, Arunkumar and Lindquist, Martin A. and Caffo, Brian},
@@ -152,4 +152,8 @@ If you use this code in your research, please consider citing:
         page = {151 -- 161}
 }
 ```
+## Acknowledgements
+
+We would like to thank the following repositories for their great works: [VideoMamba](https://github.com/OpenGVLab/VideoMamba), [MambaVision](https://github.com/NVlabs/MambaVision), [SwiFT](https://github.com/Transconnectome/SwiFT), [TFF](https://github.com/GonyRosenman/TFF).
+
 
