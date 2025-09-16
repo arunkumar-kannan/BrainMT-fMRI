@@ -36,7 +36,9 @@ BrainMT has been accepted to [MICCAI'25](https://conferences.miccai.org/2025/en/
 
 This section will guide you through setting up the environment, preprocessing data, and running the BrainMT model.
 
-### 1. fMRI Data Preprocessing
+### 1. Setting the Environment
+
+### 2. fMRI Data Preprocessing
 The code for this step is located in the `src/brainmt/preprocessing/` directory.
 
 This script preprocesses raw fMRI NIfTI files. The pipeline applies normalization (**z-score** or **min-max**), masks background voxels, and converts the 4D volumes into PyTorch tensors in `fp16` format. This conversion ensures efficient storage and accelerates data loading during training. The script also supports parallel processing to handle large datasets quickly.
