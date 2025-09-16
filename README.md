@@ -42,16 +42,16 @@ This section will guide you through setting up the environment, preprocessing da
 Our workflow begins with data that has already been processed through the standardized fMRI preprocessing pipelines of the UK BioBank (UKB) and Human Connectome Project (HCP). The data preparation steps are two-fold here: converting the fMRI volumes into a model-friendly format and preparing the corresponding phenotype targets for our downstream tasks.
 
 #### 🧠 Preprocessing fMRI Volumes
-The primary goal here is to convert the NIfTI files into a more efficient format for our model. This script, located in `src/brainmt/preprocessing/`, handles the following:
+The primary goal here is to convert the NIfTI files into a more efficient format for our model. The preprocessing script, located in `src/brainmt/preprocessing/`, handles the following:
 * **Normalization**: Applies voxel-wise normalization across the time dimension (either **z-score** or **min-max**).
 * **Masking**: Removes background voxels to reduce computational overhead.
 * **Conversion**: Transforms the 4D fMRI volumes into PyTorch tensors and saves them in `fp16` format to significantly reduce storage space and accelerate data loading during training.
 
 ##### Usage
 1.  **Configure paths and parameters** in `preprocessing/preprocess_fmri.py`.
-    * `load_root`: Set this to the directory containing your preprocessed fMRI NIfTI files.
+    * `load_root`: Set this to the directory containing preprocessed fMRI NIfTI files.
     * `save_root`: Set this to the output directory where the processed PyTorch tensors will be stored.
-2.  **Run the script** from your terminal:
+2.  **Run the script**:
     ```bash
     python src/brainmt/preprocessing/preprocess_fmri.py
     ```
@@ -87,8 +87,8 @@ We use [Hydra](https://hydra.cc/) to manage configurations, making it easy to cu
 
 The `train.py` script handles the model training process using Distributed Data Parallel (DDP) for efficient multi-GPU training.
 
-**1. Configure Your Training Run:**
-Open `configs/dataset/fmri.yaml` and update the `img_path` and `target_path` to point to your preprocessed fMRI data and phenotype files.
+**1. Configure Training Run:**
+Open `configs/dataset/fmri.yaml` and update the `img_path` and `target_path` to point to preprocessed fMRI data and phenotype files.
 
 **2. Start Training:**
 To start a training run, you can use the `torchrun` command. The configuration for the run is controlled by modifying parameters directly on the command line.
@@ -105,7 +105,7 @@ Checkpoints for the best performing model on the validation set will be saved in
 #### Inference
 
 **1. Run Inference:**
-Execute `inference.py` script from the command line, specifying the task and the path to the trained model checkpoint.
+Execute `inference.py` script specifying the task and the path to the trained model checkpoint.
 
 **Example: Running Inference on a Regression Model**
 ```bash
