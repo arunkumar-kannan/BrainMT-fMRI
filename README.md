@@ -120,7 +120,6 @@ Checkpoints for the best performing model on the validation set will be saved in
 
 #### Inference
 
-**1. Run Inference:**
 Execute `inference.py` script specifying the task and the path to the trained model checkpoint.
 
 **Example: Running Inference on a Regression Model**
