@@ -40,7 +40,7 @@ This section will guide you through setting up the environment, preprocessing da
 
 ### 2. Data Preparation
 
-Our workflow begins with data that has already been processed through the standardized fMRI preprocessing pipelines of the UK BioBank (UKB) and Human Connectome Project (HCP). The preparation steps in this repository focus on two key areas: converting the fMRI volumes into a model-friendly format and preparing the corresponding phenotype targets for our downstream tasks.
+Our workflow begins with data that has already been processed through the standardized fMRI preprocessing pipelines of the UK BioBank (UKB) and Human Connectome Project (HCP). The data preparation steps are two-fold here: converting the fMRI volumes into a model-friendly format and preparing the corresponding phenotype targets for our downstream tasks.
 
 #### 🧠 Preprocessing fMRI Volumes
 The primary goal here is to convert the NIfTI files into a more efficient format for deep learning. This script, located in `src/brainmt/preprocessing/`, handles the following:
