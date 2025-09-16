@@ -30,7 +30,7 @@ Johns Hopkins University
   <img src="assets/teaser.png" width="70%" alt="BrainMT Teaser Figure"/>
 </div>
 
----
+
 ## Getting Started
 
 This section will guide you through setting up the environment, preprocessing data, and running the BrainMT model.
@@ -127,8 +127,6 @@ Execute `inference.py` script specifying the task and the path to the trained mo
 ```bash
 python inference.py task=regression inference.checkpoint_path=/path/to/your/best_model.pth
 ```
-
----
 
 
 ## ✅ To‑Do List for Code Release
