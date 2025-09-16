@@ -32,7 +32,7 @@ BrainMT has been accepted to [MICCAI'25](https://conferences.miccai.org/2025/en/
 *Recent advances in deep learning have made it possible to predict phenotypic measures directly from functional magnetic resonance imaging (fMRI) brain volumes, sparking significant interest in the neuroimaging community. However, existing approaches, primarily based on convolutional neural networks or transformer architectures, often struggle to model the complex relationships inherent in fMRI data, limited by their inability to capture long-range spatial and temporal dependencies. To overcome these shortcomings, we introduce BrainMT, a novel hybrid framework designed to efficiently learn and integrate long-range spatiotemporal attributes in fMRI data. Our framework operates in two stages: (1) a bidirectional Mamba block with a temporal-first scanning mechanism to capture global temporal interactions in a computationally efficient manner; and (2) a transformer block leveraging self-attention to model global spatial relationships across the deep features processed by the Mamba block. Extensive experiments on two large-scale public datasets, UKBioBank and the Human Connectome Project, demonstrate that BrainMT achieves state-of-the-art performance on both classification (sex prediction) and regression (cognitive intelligence prediction) tasks, outperforming existing methods by a significant margin.*
 
 ---
-## 🚀 Getting Started
+## Getting Started
 
 This section will guide you through setting up the environment, preprocessing data, and running the BrainMT model.
 
@@ -72,11 +72,11 @@ We also prepare the target data for our two downstream tasks: regression and cla
 
   The final output for each task is a **pickle file** that contains a dictionary mapping each subject's ID to their corresponding target value. This file is used directly by the data loader during model training.
 
-#### 🚀 Running the Model
+### 3. Running the Model
 
 We use [Hydra](https://hydra.cc/) to manage configurations, making it easy to customize runs from the command line. The main configuration files are located in the `configs/` directory.
 
-### 📋 Configuration Files
+#### 📋 Configuration Files
 
 * `configs/base.yaml`: The main configuration file. It sets default parameters for the model, dataset, training schedule, optimizer, and logging.
 * `configs/model/brain_mt.yaml`: Defines the **BrainMT model architecture**, including embedding dimensions, number of layers, and patch size.
