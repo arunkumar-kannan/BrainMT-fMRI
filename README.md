@@ -100,10 +100,10 @@ We use [Hydra](https://hydra.cc/) to manage configurations, making it easy to cu
 #### Configuration Files
 
 * `configs/base.yaml`: The main configuration file. It sets default parameters for the model, dataset, training schedule, optimizer, and logging.
-* `configs/model/brain_mt.yaml`: Defines the **BrainMT model architecture**, including embedding dimensions, number of layers, and patch size.
-* `configs/dataset/fmri.yaml`: Specifies the **dataset paths** and properties, like the location of the fMRI image data and the target phenotype file.
-* `configs/task/regression.yaml`: Sets the task to **regression** and defines the loss function (`mse`).
-* `configs/task/classification.yaml`: Sets the task to **classification** and defines the loss function (`bce_with_logits`).
+* `configs/model/brain_mt.yaml`: Defines the **BrainMT model architecture**.
+* `configs/dataset/fmri.yaml`: Specifies the **dataset paths** and properties
+* `configs/task/regression.yaml`: Sets the task to **regression**.
+* `configs/task/classification.yaml`: Sets the task to **classification**.
 
 #### Training
 
