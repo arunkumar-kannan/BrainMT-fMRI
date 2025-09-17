@@ -122,6 +122,12 @@ torchrun --nproc_per_node=2 train.py task=regression
 
 Checkpoints for the best performing model on the validation set will be saved in the directory specified by `checkpoint.dir` in `configs/base.yaml`.
 
+**Note:** If you encounter NCCL P2P communication issues on multi-GPU systems, prefix the command with `NCCL_P2P_DISABLE=1`:
+
+```bash
+NCCL_P2P_DISABLE=1 torchrun --nproc_per_node=2 train.py task=regression
+```
+
 #### Inference
 
 Execute `inference.py` script specifying the task and the path to the trained model checkpoint.
