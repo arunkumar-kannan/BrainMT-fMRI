@@ -303,7 +303,7 @@ def main(cfg: DictConfig):
                     "val_mae": val_mae, 
                     "val_corr": val_corr
                 })
-                log_str += f" | Train MSE: {train_mse:.4f} | Train R: {train_corr:.4f} | Val MSE: {val_mse:.4f} | Val R: {val_corr:.4f}"
+                log_str += f" | Train MSE: {train_mse:.4f} | Val MSE: {val_mse:.4f} | Val R: {val_corr:.4f}"
             
             log.info(log_str)
             wandb.log(wandb_log)
