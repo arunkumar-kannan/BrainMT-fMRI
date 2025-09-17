@@ -42,7 +42,7 @@ logging:
   log_interval: 10
   
 checkpoint:
-  dir: "/brain_mt/checkpoints/"
+  dir: "/src/brain_mt/checkpoints/"
   save_best_only: True
 
 # --- Inference Parameters ---
