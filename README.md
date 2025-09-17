@@ -141,11 +141,11 @@ python inference.py task=regression inference.checkpoint_path=/path/to/your/best
 ## ✅ To‑Do List for Code Release
 
 - [x] ~~Create repository~~     
-- [x] ~~Installation guide** – provide `requirements.txt` / `environment.yml` and setup instructions~~  
-- [x] ~~Training scripts** – release reproducible training pipeline (`train.py`, configs)~~
-- [x] ~~Evaluation scripts** – include scripts for validation and test‑set evaluation~~
-- [x] ~~Dataset prep** – share preprocessing scripts~~
-- [x] ~~Config files** – upload YAML config templates for different tasks~~
+- [x] ~~Installation guide – provide `requirements.txt` / `environment.yml` and setup instructions~~  
+- [x] ~~Training scripts – release reproducible training pipeline (`train.py`, configs)~~
+- [x] ~~Evaluation scripts – include scripts for validation and test‑set evaluation~~
+- [x] ~~Dataset prep – share preprocessing scripts~~
+- [x] ~~Config files – upload YAML config templates for different tasks~~
 
 ## Citation
 
