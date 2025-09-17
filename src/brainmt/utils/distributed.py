@@ -11,11 +11,6 @@ def init_distributed_mode(cfg):
         world_size = int(os.environ["WORLD_SIZE"])
         gpu = int(os.environ['LOCAL_RANK'])
         
-        # Set NCCL environment variables for better debugging
-        os.environ['NCCL_DEBUG'] = 'INFO'
-        os.environ['NCCL_BLOCKING_WAIT'] = '1'
-        os.environ['NCCL_ASYNC_ERROR_HANDLING'] = '1'
-        
         torch.cuda.set_device(gpu)
         
         if rank == 0:
