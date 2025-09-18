@@ -166,4 +166,6 @@ If you find this repository useful, please consider citing:
 
 We would like to thank the following repositories for their great works: [VideoMamba](https://github.com/OpenGVLab/VideoMamba), [MambaVision](https://github.com/NVlabs/MambaVision), [SwiFT](https://github.com/Transconnectome/SwiFT), [TFF](https://github.com/GonyRosenman/TFF).
 
+This work used data from the [Human Connectome Project](https://www.humanconnectome.org/study/hcp-young-adult/document/extensively-processed-fmri-data-documentation), WU-Minn Consortium (PIs David Van Essen and Kamil Ugurbil; NIH grant 1U54 MH091657, funded by the 16 NIH Institutes and Centers supporting the NIH Blueprint for Neuroscience Research and the McDonnell Center for Systems Neuroscience at Washington University), as well as from [UK Biobank](https://www.ukbiobank.ac.uk) (Project ID 33278), a major biomedical database.
+
 
