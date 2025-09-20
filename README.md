@@ -137,6 +137,13 @@ Execute `inference.py` script specifying the task and the path to the trained mo
 python inference.py task=regression inference.checkpoint_path=/path/to/your/best_model.pth
 ```
 
+### 4. Checkpoints
+
+| Datasets        | HCP           | UKB  |
+| :-------------: |:-------------:| :-----:|
+| Regression (cognitive intelligence)      | Download | Download |
+| Classification (sex)     | Download     |   Download |
+
 
 ## ✅ To‑Do List for Code Release
 
