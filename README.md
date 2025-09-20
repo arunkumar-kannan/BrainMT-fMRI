@@ -146,6 +146,7 @@ python inference.py task=regression inference.checkpoint_path=/path/to/your/best
 - [x] ~~Evaluation scripts – include scripts for validation and test‑set evaluation~~
 - [x] ~~Dataset prep – share preprocessing scripts~~
 - [x] ~~Config files – upload YAML config templates for different tasks~~
+- [ ] Release Model checkpoints
 
 ## Citation
 
